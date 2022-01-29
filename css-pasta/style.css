@@ -2,7 +2,7 @@
   MediumBlue = #0000CD*/
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
-
+/*---------------configuração geral*/
   *{
     margin: 0;
     padding: 0;
@@ -10,6 +10,12 @@
     font-family: 'Poppins', sans-serif;
   }
 
+  .clicado{
+    transition: .4s ease;
+    transform:scaleY(1.5);
+  }
+
+/*-------------------------------------------*/
   body{
     border: none;
     display: flex;
@@ -98,9 +104,7 @@
 
 
 
-
-
-
+/*-----------------------------------------------*/
   @media (max-width: 600px) {
     .container .boxInput{
       flex: 100%;
