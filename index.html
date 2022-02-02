@@ -1,58 +1,137 @@
+<!--git branch -M main-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css-pasta/style.css">
-    <title>Login-tela</title>
+    <link rel="stylesheet" href="/css-pasta/style.css">
+    <title>Telas</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(45deg, #6A5ACD, #B0C4DE, #fff);
+        }
+    /*----tela de login  */
+        .container{
+            background-image: linear-gradient(45deg, rgba(202, 107, 207), rgba(255, 255, 255));
+        }
+
+        .box-button .btn{
+            background-image: linear-gradient(45deg, #6A5ACD, #B0C4DE, #fff);
+        }
+    /*---final-tela de login  */
+
+    /*----tela de cadastro  */
+        .cadastro-Container{
+            background-image: linear-gradient(45deg, rgba(202, 107, 207), rgba(255, 255, 255));
+        }
+
+        .genero ul li#homem{
+            background-image: linear-gradient(45deg, #191970, #fff);
+        }
+
+        .genero ul li#mulher{
+            background-image: linear-gradient(280deg, #FF7F50, #fff);
+        }
+
+    /*---final-tela de login  */
+
+    </style>
 </head>
+
 <body>
-
+    <!----------------tela de login ------------------->
     <div class="container">
-            <div class="boxInput">
-                <span class="descricao">Name</span>
-                <input type="text" class="ipt" placeholder="Enter your name" required>
-            </div>
+        <div class="header">
+            <span>Log In</span>
+        </div>
 
-            <div class="boxInput">
-                <span class="descricao">UsernAme</span>
-                <input type="text" class="ipt" placeholder="Enter your Username" required>
-            </div>
+        <div class="email-senha-lista">
+            <div class="email-senha">
 
-            <div class="boxInput">
-                <span class="descricao">Email</span>
-                <input type="email" class="ipt" placeholder="Enter your Email" required>
-            </div>
+                <div class="boxEmail">
+                    <label for="email">email</label>
+                    <input id="email" type="email" name="email" placeholder="enter your email here">
+                </div>
 
-            <div class="boxInput">
-                <span class="descricao">Number Phone</span>
-                <input type="number" class="ipt" placeholder="Enter your Number" required>
-            </div>
-
-            <div class="boxInput">
-                <span class="descricao">Password</span>
-                <input type="password" class="ipt" placeholder="Enter your Password" required>
-            </div>
-
-            <div class="boxInput">
-                <span class="descricao">Confirm password</span>
-                <input type="password" class="ipt" placeholder="Confirm your password" required>
-            </div>
-
-            <div class="genero">
-                <span class="descricao">Genero</span>
-
-                <div class="boxGeneros">
-                    <div class="male">Male</div>
-
-                    <div class="female">female</div>
+                <div class="boxSenha">
+                    <label for="senha">password</label>
+                    <input id="senha" type="password" name="senha" placeholder="enter your password here">
                 </div>
             </div>
 
-            <button class="btn">Registrar</button>
+            <ul class="lista">
+                <li id="semConta"><a href="#">Não possuo conta</a></li>
+                <li id="esqueciConta"><a href="#">Esqueci minha senha</a></li>
+            </ul>
         </div>
 
-        <script src="/script/script.js"></script>
+        <div class="box-button">
+            <button class="btn">sign in</button>
+        </div>
+    </div>
+    <!---------------final-tela de login ------------------->
+
+    <!----------------tela de cadastro ------------------->
+
+    <div class="cadastro-Container cadastro-Container-abaixo">
+        <div class="cadastro-Header">
+            <p id="back">Voltar</p>
+            <span>Cadastro</span>
+
+            <div class="logo">
+                Logo
+            </div>
+        </div>
+
+        <div class="inputs-cadastro">
+
+            <div class="input-cadastro">
+                <label for="nome">nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="input-cadastro">
+                <label for="senha">senha</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+
+            <div class="input-cadastro">
+                <label for="numero">Telefone</label>
+                <input type="phone" name="numero" id="numero">
+            </div>
+
+            <div class="input-cadastro">
+                <label for="email">email</label>
+                <input type="text" name="email" id="email">
+            </div>
+
+            <div class="input-cadastro">
+                <label for="Confirmar-senha">Confirmar senha</label>
+                <input type="password" name="Confirmar-senha" id="Confirmar-senha">
+            </div>
+
+            <div class="input-cadastro">
+                <label for="departamento">departamento</label>
+                <input type="text" name="departamento" id="departamento">
+            </div>
+        </div>
+
+        <div class="genero">
+            <p>Genero</p>
+            <ul>
+                <li id="homem">Masculino</li>
+                <li id="mulher">Feminino</li>
+            </ul>
+        </div>
+
+        <div class="box-button">
+            <button class="btn">sign in</button>
+        </div>
+
+    </div>
+
+    <script src="/script/script.js"></script>
 </body>
 </html>
